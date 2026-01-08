@@ -133,12 +133,17 @@ The interface runs entirely locally and does not require deployment or hosting.
 ```bash
 git clone https://github.com/Himkush12/Auto-Judge-ACM.git
 cd Auto-Judge-ACM
- 
-### 2. Install dependencies
-pip install -r requirements.txt
+```
 
-### 3.Run the Web application
+### 2. Install dependencies
+```bash
+pip install -r requirements.txt
+```
+
+### 3. Run the Web application
+```bash
 streamlit run app.py
+```
 
 ## Demo Video
 A short demo video (2–3 minutes) demonstrating:
