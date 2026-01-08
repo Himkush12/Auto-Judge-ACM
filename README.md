@@ -153,6 +153,7 @@ A short demo video (2–3 minutes) demonstrating:
 
  **Demo Video Link:**  
 (https://drive.google.com/drive/folders/1O27JJwiCeh1c4SENvvh2xEdkevYrGcfA?usp=sharing)
+ **Note:** The trained `.pkl` model files not being used in the final version are not included directly in this repository, they are in the drive.  
 
 ## Author
 **Himesh Kushwaha**  
