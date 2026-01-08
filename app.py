@@ -54,62 +54,45 @@ def class_color(diff_class):
 
 
 # ----------------------------
-# Input section
+# Input section + Prediction
 # ----------------------------
 st.header("Problem Details")
 
 title = st.text_area(
     "Problem Title (optional)",
-    height=80,
-    placeholder="e.g. Carnival Wheel"
+    height=80
 )
 
 description = st.text_area(
     "Problem Description",
-    height=300,
-    placeholder="Paste the full problem statement here..."
+    height=300
 )
 
 input_desc = st.text_area(
     "Input Description",
-    height=150,
-    placeholder="Describe the input format..."
+    height=150
 )
 
 output_desc = st.text_area(
     "Output Description",
-    height=150,
-    placeholder="Describe the expected output..."
+    height=150
 )
 
 st.divider()
-st.header("Sample Input / Output")
+st.header("Sample Input / Output (optional)")
 
 sample_input = st.text_area(
-    "Sample Input (optional)",
-    height=150,
-    placeholder="Paste sample input here..."
+    "Sample Input",
+    height=150
 )
 
 sample_output = st.text_area(
-    "Sample Output (optional)",
-    height=150,
-    placeholder="Paste sample output here..."
+    "Sample Output",
+    height=150
 )
 
-# ----------------------------
-# Action buttons
-# ----------------------------
-col1, col2 = st.columns(2)
+predict_clicked = st.button("Predict Difficulty")
 
-with col1:
-    predict_clicked = st.button("Predict Difficulty")
-
-with col2:
-    clear_clicked = st.button("Clear All")
-
-if clear_clicked:
-    st.experimental_rerun()
 
 # ----------------------------
 # Prediction logic
@@ -135,6 +118,7 @@ if predict_clicked:
 
         X = tfidf_vectorizer.transform([full_text])
         predicted_score = regression_model.predict(X)[0]
+        # predicted_score = max(0.0, predicted_score)
         predicted_class = score_to_class(predicted_score)
 
         # ----------------------------
