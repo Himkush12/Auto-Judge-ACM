@@ -36,9 +36,9 @@ def safe_text(x):
 
 
 def score_to_class(score):
-    if score <= 2.6:
+    if score <= 2.7:
         return "Easy"
-    elif score >= 5.8:
+    elif score >= 5.4:
         return "Hard"
     else:
         return "Medium"
