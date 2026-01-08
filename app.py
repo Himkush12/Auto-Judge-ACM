@@ -146,13 +146,13 @@ if predict_clicked:
         color = class_color(predicted_class)
 
         st.markdown(
-            f"### 🏷 Difficulty: "
+            f"### Difficulty Class: "
             f"<span style='color:{color};'>{predicted_class}</span>",
             unsafe_allow_html=True
         )
 
         st.markdown(
-            f"### 🔢 Difficulty Score: **{round(predicted_score, 2)}**"
+            f"### Difficulty Score: **{round(predicted_score, 2)}**"
         )
 
         st.caption(
