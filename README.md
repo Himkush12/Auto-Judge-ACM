@@ -152,7 +152,7 @@ A short demo video (2–3 minutes) demonstrating:
 - Working web interface with sample predictions
 
  **Demo Video Link:**  
-(Add link here)
+(https://drive.google.com/drive/folders/1O27JJwiCeh1c4SENvvh2xEdkevYrGcfA?usp=sharing)
 
 ## Author
 **Himesh Kushwaha**  
